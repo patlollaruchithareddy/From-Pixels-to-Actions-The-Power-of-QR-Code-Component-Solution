@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+    body{
+      background-color: hsl(212, 45%, 89%);
+      font-family: 'Outfit', sans-serif;
+    }
+    .flex-container{
+      width: 100%;
+      height: 400px;
+      max-width: 300px; 
+      margin: 120px auto; 
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+    }
+    .box{
+      margin: 15px;
+    }
+    .box img{
+      width: 100%;
+      margin-top: 15px;
+      border-radius: 10px;
+    }
+    @media (max-width: 375px) {
+      .flex-container {
+        max-width: 100%;
+      }
+      
+    }
+    @media (max-width: 1440px) {
+      .flex-container {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    
+    .attribution { font-size: 15px; text-align: center; }
+    .attribution a { color: hsl(218, 44%, 22%); }
+    #fontsize1{font-family: 'Outfit', sans-serif; font-weight: bold; text-align: center;}
+    #fontsize2{font-family: 'Outfit', sans-serif; font-weight: 100; text-align: center; color: hsl(220, 15%, 55%);}
+    p{
+      align-content: center;
+    } 
+  </style>
+</head>
+<body>
+    <div>
+      <div class="flex-container">
+        <div class="box">
+          <img src="./images/image-qr-code.png" alt="QR_code" width="220" height="220">
+          <p id="fontsize1">Improve your front-end skills by building projects</p>
+          <p id="fontsize2">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        </div>
+      </div>
+    </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/patlolla-ruchitha-reddy-68a797214">Patlolla-Ruchitha-Reddy</a>.
+  </div>
+</body>
+</html>
